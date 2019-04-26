@@ -24,6 +24,9 @@
     <ClInclude Include="display.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\GLFW\include\GLFW\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C8MU.cpp">

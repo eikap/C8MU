@@ -23,7 +23,7 @@
     <ProjectGuid>{A0993E89-1970-423B-A42E-28204301B834}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>C8MU</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\GLFW\include\GLFW\glfw3.h" />
     <ClInclude Include="c8.h" />
     <ClInclude Include="display.h" />
     <ClInclude Include="mem.h" />

@@ -8,6 +8,7 @@ static const uint8_t DISPLAY_WIDTH = 64;
 static const uint8_t DISPLAY_HEIGHT = 32;
 
 bool gfx[DISPLAY_HEIGHT][DISPLAY_WIDTH];
+char glTexData[DISPLAY_WIDTH*DISPLAY_HEIGHT];
 bool drawFlag = false;
 
 void disp_clear() {
@@ -37,7 +38,7 @@ void draw_sprite(uint8_t x, uint8_t y, uint8_t height, uint16_t address) {
 }
 
 char * disp_data() {
-	char* data = new char[DISPLAY_WIDTH*DISPLAY_HEIGHT];
+	char* data = &glTexData[0];
 	for (int y = 0; y < DISPLAY_HEIGHT; y++) {
 		for (int x = 0; x < DISPLAY_WIDTH; x++) {
 			data[(31 * 64) - (y * 64) + x] = gfx[y][x]*0xFF; // Vertical Flip for OGL
